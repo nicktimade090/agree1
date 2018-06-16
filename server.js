@@ -8,9 +8,9 @@ app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var con = mysql.createConnection({
-  host     : 'mysql://mysql:3306/',//'temp.ckiocwfmeq58.us-west-2.rds.amazonaws.com',
-  user     : 'root',//'vips',
-  password : '123456789',//'12345678',
+  host     : 'mysql://mysql:3306/',
+  user     : 'root',
+  password : '123456789',
   database : 'db'
  
 });
