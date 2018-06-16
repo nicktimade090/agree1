@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-var mysql = require('mysql')
+var mysql = require('mysql');
 var bodyParser = require('body-parser');
 
 
@@ -8,10 +8,11 @@ app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var con = mysql.createConnection({
-  host     : '192.168.225.41',//'temp.ckiocwfmeq58.us-west-2.rds.amazonaws.com',
-  user     : 'test',//'vips',
-  password : '12345678',//'12345678',
-  database : "agree"
+  host     : '',//'temp.ckiocwfmeq58.us-west-2.rds.amazonaws.com',
+  user     : '',//'vips',
+  password : '',//'12345678',
+  database : ''
+ 
 });
 con.connect(function(err) {
   if (err) throw err;
